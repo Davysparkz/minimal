@@ -3,6 +3,7 @@ namespace w32 {
 // Windows Header Files
 #include <windows.h>
 
+	// OPAQUE types
     using uint_t = UINT;
     using dword_t = DWORD;
     using handle_t = HANDLE;
@@ -15,5 +16,11 @@ namespace w32 {
     using lresult_t = LRESULT;
     using hresult_t = HRESULT;
     using hbrush_t = HBRUSH;
-    using msg_t = MSG;
+	using atom_t = ATOM;
+
+	// STRUCTS
+	using wndclassexw_s = WNDCLASSEXW;
+	using wndclassex_s = WNDCLASSEX;
+	using msg_s = MSG;
+
 }

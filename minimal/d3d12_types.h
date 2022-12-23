@@ -2,6 +2,10 @@ namespace dx {
 
 #include <d3d12.h>
 
+#define iid_ppv_args(ppType) IID_PPV_ARGS(ppType)
+
+
+	// INTERFACES end with *_t
 	using object_t = ID3D12Object;	
 	using devicechild_t = ID3D12DeviceChild;
 	using rootsignature_t = ID3D12RootSignature;
@@ -65,5 +69,16 @@ namespace dx {
 	using graphicscommandlist5_t = ID3D12GraphicsCommandList5;
 	using graphicscommandlist6_t = ID3D12GraphicsCommandList6;
 
-	#define iid_ppv_args(ppType) IID_PPV_ARGS(ppType)
+
+	// STRUCTS end with *_s
+	using dxgiswapchaindesc_s = DXGI_SWAP_CHAIN_DESC;
+	using dxgiswapchaindesc1_s = DXGI_SWAP_CHAIN_DESC1;
+	using commandqueuedesc_s = D3D12_COMMAND_QUEUE_DESC;
+	using infoqueuefilter_s = D3D12_INFO_QUEUE_FILTER;
+	using message_severity_s = D3D12_MESSAGE_SEVERITY;
+	using dxgiadapterdesc1_s = DXGI_ADAPTER_DESC1;
+
+	// ENUMS end with *_e
+	using commandlisttype_e = D3D12_COMMAND_LIST_TYPE;
+	using messageid_e = D3D12_MESSAGE_ID;
 }
