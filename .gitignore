@@ -1,0 +1,14 @@
+*.ipch
+*.suo
+*.VC.db
+*.VC.opendb
+
+*.swp
+*.swo
+*.un~
+*.*~
+
+[Dd]ebug/
+[Rr]elease/
+x64/
+.vscode/
